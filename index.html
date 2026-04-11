@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated wave background -->
+    <div class="wave-background">
+        <svg class="waves" viewBox="0 0 1200 1400" preserveAspectRatio="xMidYMid slice">
+            <g class="wave-group">
+                <!-- Primary wave (baseline amplitude) -->
+                <path id="wave1" class="wave-line" d="M0,700 L1200,700" />
+                <!-- Secondary wave (double amplitude) -->
+                <path id="wave2" class="wave-line" style="stroke: #764ba2; opacity: 0.9;" d="M0,700 L1200,700" />
+            </g>
+        </svg>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">My Portfolio</span>
+                <div class="logo-animation"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#habilidades">Info</a></li>
+                <li><a href="#mas-sobre-mi">Projects</a></li>
+                <li><a href="#contacto">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="title-wrapper">
+                <h1 class="hero-title">
+                    <span class="letter">W</span>
+                    <span class="letter">e</span>
+                    <span class="letter">l</span>
+                    <span class="letter">c</span>
+                    <span class="letter">o</span>
+                    <span class="letter">m</span>
+                    <span class="letter">e</span>
+                    <span class="letter"> </span>
+                    <span class="letter">t</span>
+                    <span class="letter">o</span>
+                    <span class="letter"> </span>
+                    <span class="letter">m</span>
+                    <span class="letter">y</span>
+                    <span class="letter"> </span>
+                    <span class="letter">P</span>
+                    <span class="letter">o</span>
+                    <span class="letter">r</span>
+                    <span class="letter">t</span>
+                    <span class="letter">f</span>
+                    <span class="letter">o</span>
+                    <span class="letter">l</span>
+                    <span class="letter">i</span>
+                    <span class="letter">o</span>
+                </h1>
+            </div>
+            <p class="hero-subtitle">I am a creative developer and web designer</p>
+            <div class="cta-buttons">
+                <button class="btn-primary" onclick="scroll('#mas-sobre-mi')">View My Work</button>
+                <button class="btn-secondary" onclick="scroll('#contacto')">Contact Me</button>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Portfolio Intro Section -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2 class="section-title">About This Portfolio</h2>
+            <div class="portfolio-intro">
+                <div class="portfolio-copy">
+                    <p>This website is a presentation of my technical and creative profile. It brings together my path through robotics, electronics, systems integration, mechanical design, and the development of solutions focused on human-robot interaction.</p>
+                    <p>The goal of this portfolio is to show not only finished projects, but also how I work: how I move from an idea or a real problem to a solution that is built, validated, and explained with proper technical context.</p>
+                    <p>Here you will find everything from hardware and fabrication projects to autonomous navigation, computer vision, HRI, and systems developed in academic and professional environments.</p>
+                </div>
+                <div class="portfolio-panel">
+                    <h3>What You Will Find Here</h3>
+                    <ul class="portfolio-list">
+                        <li>Projects that show my evolution from electronics and mechatronics to advanced robotics.</li>
+                        <li>Technical knowledge organized by technologies, tools, and skills applied in real projects.</li>
+                        <li>A more personal and professional summary of who I am, how I work, and the kind of challenges where I add the most value.</li>
+                    </ul>
+                    <div class="portfolio-links">
+                        <a href="mis-proyectos.html">View projects</a>
+                        <a href="conocimientos-tecnicos.html">Explore skills</a>
+                        <a href="sobre-mi.html">Read about me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More About Me Section -->
+    <section id="mas-sobre-mi" class="more-about">
+        <div class="container">
+            <h2 class="section-title">Learn More About Me</h2>
+            <div class="more-grid">
+                <a class="more-card" href="sobre-mi.html">
+                    <div class="video-container">
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="videos/sobre-mi.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay"><span class="play-icon">▶</span></div>
+                    </div>
+                    <h3>About Me</h3>
+                </a>
+
+                <a class="more-card" href="cv.html">
+                    <div class="video-container">
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="videos/cv.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay"><span class="play-icon">▶</span></div>
+                    </div>
+                    <h3>CV</h3>
+                </a>
+
+                <a class="more-card" href="mis-proyectos.html">
+                    <div class="video-container">
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="videos/mis-proyectos.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay"><span class="play-icon">▶</span></div>
+                    </div>
+                    <h3>My Projects</h3>
+                </a>
+
+                <a class="more-card" href="conocimientos-tecnicos.html">
+                    <div class="video-container">
+                        <video autoplay muted loop playsinline preload="metadata">
+                            <source src="videos/conocimientos.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay"><span class="play-icon">▶</span></div>
+                    </div>
+                    <h3>Technical Skills</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Statistics Section 
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <div class="stat-number" data-target="150">0</div>
+                <p>Completed Projects</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="200">0</div>
+                <p>Satisfied Clients</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="10">0</div>
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="99">0</div>
+                <p>% Satisfaction</p>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <form class="contact-form" onsubmit="enviarFormulario(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your name" required>
+                        <span class="form-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your email" required>
+                        <span class="form-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your message" rows="5" required></textarea>
+                        <span class="form-border"></span>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <p>tu@email.com</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <p>+34 123 456 789</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <p>Spain</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">𝕏</a>
+                        <a href="#" class="social-icon">👨‍💻</a>
+                        <a href="#" class="social-icon">💼</a>
+                        <a href="#" class="social-icon">📷</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 My Creative Portfolio. Made with ❤️ and a lot of creativity</p>
+            <div class="floating-shapes">
+                <div class="float-shape"></div>
+                <div class="float-shape"></div>
+                <div class="float-shape"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
