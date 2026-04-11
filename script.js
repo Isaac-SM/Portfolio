@@ -17,6 +17,12 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     });
 });
 
+// Set a redirect URL for the contact form that works both locally and when deployed
+const formNextUrl = document.getElementById('form-next-url');
+if (formNextUrl) {
+    formNextUrl.value = new URL('thank-you.html', window.location.href).href;
+}
+
 // Animate numbers in the stats section
 function animarNumeros() {
     const numbers = document.querySelectorAll('.stat-number');
@@ -88,22 +94,6 @@ function crearConfetti() {
         }
         animateConfetti();
     }
-}
-
-// Submit form
-function enviarFormulario(event) {
-    event.preventDefault();
-    const form = event.target;
-    const name = form.querySelector('input[type="text"]').value;
-    
-    // Show message
-    alert(`Thanks ${name}! Your message has been received. We will contact you soon!`);
-    
-    // Celebration effect
-    crearConfetti();
-    
-    // Reset form
-    form.reset();
 }
 
 // Change navbar color on scroll
