@@ -1,5 +1,5 @@
 // Smooth scroll function for sections
-function scroll(selector) {
+function scrollToSection(selector) {
     const element = document.querySelector(selector);
     if (element) {
         element.scrollIntoView({
@@ -13,7 +13,7 @@ function scroll(selector) {
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
-        scroll(this.getAttribute('href'));
+        scrollToSection(this.getAttribute('href'));
     });
 });
 
