@@ -264,7 +264,7 @@ body {
 
 .letter {
     display: inline-block;
-    animation: letterBounce 2.0s ease infinite;
+    animation: letterBounce 4.2s ease infinite;
 }
 
 .letter:nth-child(1) { animation-delay: 0s; }
@@ -293,8 +293,10 @@ body {
 .letter:nth-child(24) { animation-delay: 2.3s; }
 .letter:nth-child(25) { animation-delay: 2.4s; }
 @keyframes letterBounce {
-    0%, 100% { transform: translateY(0); color: #667eea; }
-    50% { transform: translateY(-20px); color: #764ba2; }
+    0% { transform: translateY(0); color: #667eea; }
+    23.8095% { transform: translateY(-20px); color: #764ba2; }
+    47.619% { transform: translateY(0); color: #667eea; }
+    100% { transform: translateY(0); color: #667eea; }
 }
 
 .hero-subtitle {
